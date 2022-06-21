@@ -3,11 +3,12 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Home from './Component/Home';
+import Addstudent from './Component/Addstudent';
 
 function App() {
   return (
     <>
-    <Home/>
+    <Addstudent/>
     </>
   );
 }
