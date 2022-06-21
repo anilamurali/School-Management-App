@@ -5,11 +5,12 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Home from './Component/Home';
 import Addstudent from './Component/Addstudent';
 import Studentsearch from './Component/Studentsearch';
+import Addfacutly from './Component/Addfacutly';
 
 function App() {
   return (
     <>
-    <Studentsearch/>
+    <Addfacutly/>
     </>
   );
 }
