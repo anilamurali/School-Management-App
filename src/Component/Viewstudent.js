@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from './Header'
 
 const Viewstudent = () => {
     const data=[{
@@ -13,7 +14,11 @@ const Viewstudent = () => {
 }]
   return (
     <div>
-        <table class="table table-hover table-success">
+      <Header/>
+      <div class="container">
+  <div class="row">
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12">
+    <table class="table table-hover table-success">
   <thead>
     <tr>
       <th scope="col">ADMISSION NUMBER</th>
@@ -42,6 +47,10 @@ const Viewstudent = () => {
     
   </tbody>
 </table>
+    </div>
+  </div>
+</div>
+        
     </div>
   )
 }
