@@ -10,6 +10,7 @@ import Viewfaculty from './Component/Viewfaculty';
 import Viewstudent from './Component/Viewstudent';
 import Header from './Component/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Facultysearch from './Component/Facultysearch';
 
 function App() {
   return (
@@ -22,8 +23,10 @@ function App() {
      <Route path='/searchstudent' exact element={<Studentsearch/>}/>
      <Route path='/viewfaculty' exact element={<Viewfaculty/>}/>
      <Route path='/addfaculty' exact element={<Addfacutly/>} />
+     <Route path='/Searchfaculty' exact element={<Facultysearch/>} />
     </Routes>
     </BrowserRouter>
+    
     </>
   );
 }

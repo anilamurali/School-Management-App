@@ -33,6 +33,7 @@ const Header = () => {
       <Link class="nav-link active" to='/Searchfaculty'>Search Faculty</Link>
       </li>
       
+      
     </ul>
   </div>
 </nav>
