@@ -8,11 +8,22 @@ import Studentsearch from './Component/Studentsearch';
 import Addfacutly from './Component/Addfacutly';
 import Viewfaculty from './Component/Viewfaculty';
 import Viewstudent from './Component/Viewstudent';
+import Header from './Component/Header';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <>
-    <Viewstudent/>
+    <BrowserRouter>
+    <Routes>
+     <Route path='/' exact element={<Home/>}/>
+     <Route path='/studentview' exact element={<Viewstudent/>}/>
+     <Route path='/addstudent' exact element={<Addstudent/>}/>
+     <Route path='/searchstudent' exact element={<Studentsearch/>}/>
+     <Route path='/viewfaculty' exact element={<Viewfaculty/>}/>
+     <Route path='/addfaculty' exact element={<Addfacutly/>} />
+    </Routes>
+    </BrowserRouter>
     </>
   );
 }
